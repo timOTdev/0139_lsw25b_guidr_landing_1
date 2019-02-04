@@ -1,0 +1,198 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.container {
+  max-width: 1000px;
+  width: 100%;
+  background-color: #1f669d;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  background-color: #1F9D55;
+  padding: 2rem;
+}
+nav a {
+  font-size: 1.6rem;
+  color: black;
+}
+.img-container {
+  display: flex;
+  flex-flow: column;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: #1A4731;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 40px;
+  background-color: #1F9D55;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+.top-content {
+  display: flex;
+  flex-flow: column;
+}
+.top-content h4 {
+  margin: 2rem;
+}
+.contact {
+  display: flex;
+  flex-flow: column;
+  padding: 3rem;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
