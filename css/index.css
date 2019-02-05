@@ -168,6 +168,27 @@ nav a:active {
   background-color: #1A4731;
   transform: translateY(4px);
 }
+.carousel {
+  display: flex;
+}
+.left-button,
+.right-button {
+  margin-top: 300px;
+  color: black;
+  font-size: 75px;
+  font-weight: bold;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.imgs {
+  width: 45%;
+  display: none;
+}
+.card {
+  display: none;
+}
 .img-container {
   display: flex;
   flex-flow: column;
@@ -203,10 +224,10 @@ nav a:active {
   align-items: center;
   font-size: 1.6rem;
   width: 50%;
-  height: 40px;
+  height: 4rem;
   background-color: #1F9D55;
   color: silver;
-  border-radius: 20px;
+  border-radius: 2rem;
   cursor: pointer;
   text-align: center;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
@@ -243,11 +264,20 @@ nav a:active {
 .article p {
   padding: 1rem;
 }
+.article .open {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 1.2rem;
+  color: silver;
+  cursor: pointer;
+  transform: translate(-50%);
+}
 .article .close {
   position: absolute;
   bottom: 0;
   left: 50%;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: silver;
   cursor: pointer;
   transform: translate(-50%);
@@ -259,7 +289,7 @@ nav a:active {
   position: absolute;
   bottom: 0;
   left: 50%;
-  font-size: 12px;
+  font-size: 1.2rem;
   color: silver;
   cursor: pointer;
   transform: translate(-50%);
