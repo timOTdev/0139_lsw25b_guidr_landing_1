@@ -37,6 +37,11 @@ class Carousel {
     this.imgList[this.index].style.display="block";  
     this.leftBtn.addEventListener("click", () => this.GoLeft());
     this.rightBtn.addEventListener("click", () => this.GoRight());
+    this.leftBtn.addEventListener("mouseover", e => {e.target.style.color = "orange";
+  });
+  this.rightBtn.addEventListener("mouseover", e => {e.target.style.color = "orange";
+});
+    
     this.cardList = Array.from(this.imgList).map(img => new Card(img))
   }
 GoLeft () {
@@ -85,6 +90,7 @@ class Card {
       carouselList.forEach(carousel => new Carousel(carousel))
   
    
+      let fadein_tween = TweenLite.from( '.container', 1, {autoAlpha:0, y: 500} );
 
 
 
@@ -98,7 +104,6 @@ class Card {
     
 
 
-    let fadein_tween = TweenLite.from( '.container', 1, {autoAlpha:0, y: 500} );
   
 
   
