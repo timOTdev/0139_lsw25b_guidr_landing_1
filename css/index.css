@@ -150,7 +150,7 @@ nav {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
-  background-color: #1F9D55;
+  background-color: #1f9d55;
   padding: 2rem;
   cursor: pointer;
 }
@@ -161,6 +161,7 @@ nav a {
   transition-duration: 0.4s;
   text-decoration-line: none;
   background-color: #1F9D55;
+  background: rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
 nav a:hover {
@@ -173,10 +174,12 @@ nav a:active {
 .img-container {
   display: flex;
   flex-flow: column-reverse;
+  height: auto;
+  width: 100%;
 }
 .img-container .carousel {
   display: flex;
-  height: rem;
+  justify-content: center;
 }
 .img-container .leftBut,
 .img-container .rightBut {
@@ -199,13 +202,14 @@ nav a:active {
   .img-container {
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    padding: 0 10rem;
+    align-items: center;
+    padding: 2rem 10rem;
   }
 }
 @media (min-width: 840px) {
   .img-container {
     display: flex;
+    justify-content: space-evenly;
     flex-flow: row;
     padding: 2rem 0;
   }
@@ -221,8 +225,25 @@ nav a:active {
   align-items: center;
 }
 .slogan h1 {
-  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  background-color: #1F9D55;
+  font-size: 2rem;
   color: #1A4731;
+  align-content: center;
+  margin: 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+@media (min-width: 500px) {
+  .slogan h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 840px) {
+  .slogan h1 {
+    font-size: 3rem;
+  }
 }
 .slogan .btn {
   display: flex;
@@ -250,7 +271,6 @@ nav a:active {
 #bottom-content {
   display: flex;
   flex-flow: column;
-  padding: 3rem;
 }
 .article {
   margin: 2rem;
@@ -269,8 +289,7 @@ nav a:active {
   font-size: 3rem;
 }
 .article p {
-  font-size: 1.6rem;
-  padding: 1rem;
+  font-size: 2rem;
 }
 .article .open {
   position: absolute;
@@ -314,9 +333,19 @@ nav a:active {
   align-items: center;
   font-size: 2rem;
   background-color: #1F9D55;
-  margin: 3rem;
+  margin: 2rem;
   border-radius: 1rem;
   border: 1px solid black;
+}
+@media (min-width: 840px) {
+  #contact {
+    margin: 20rem;
+  }
+}
+@media (min-width: 500px) {
+  #contact {
+    margin: 0 10rem;
+  }
 }
 #contact .address {
   text-decoration-line: none;
@@ -340,11 +369,11 @@ nav a:active {
   opacity: 0.7;
 }
 #contact .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 #contact .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 footer {
@@ -352,4 +381,66 @@ footer {
   justify-content: center;
   font-size: 4rem;
   color: #1A4731;
+}
+.about-container {
+  background-color: #1f669d;
+}
+.about-container h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.about-container #bottom-content {
+  display: flex;
+  flex-flow: column;
+}
+.about-container .article {
+  margin: 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  background-color: #1F9D55;
+  position: relative;
+  height: 30rem;
+  overflow: hidden;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.4s;
+}
+.about-container .article p {
+  font-size: 2rem;
+}
+.about-container .article .open {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 1.6rem;
+  color: silver;
+  cursor: pointer;
+  transform: translate(-50%);
+}
+.about-container .article .close {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 1.2rem;
+  color: silver;
+  cursor: pointer;
+  transform: translate(-50%);
+}
+.about-container .article .hide-btn {
+  display: none;
+}
+.about-container .article .panel-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 2rem;
+  color: silver;
+  cursor: pointer;
+  transform: translate(-50%);
+}
+.about-container .article .toggle-on {
+  display: block;
+}
+.about-container .article-open {
+  height: 20rem;
 }
