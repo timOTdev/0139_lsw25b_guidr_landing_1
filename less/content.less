@@ -30,63 +30,66 @@ nav a {
       transform: translateY(4px);
     }
   }
-      .carousel {
-        display: flex;
-
-        
-      }
-      
-              .leftBut,
-              .rightBut {
-                margin-top:300px;
-                color: @Green-Darker;
-                font-size: 3rem;
-                font-weight:bold;
-                cursor: pointer;
-                
-                
-              }
-                
-              .carousel-img {
-                border-radius: 2rem;
-                border: 4px solid black;
-                display:none;
-              }
-              
-                
-              .card {
-                display:none;
-              }
-              
   
   
   .img-container{
     
     display: flex;
     flex-flow: column-reverse;
-    padding: 2rem;
     
     
+    
+    .carousel {
+      display: flex;
+      height: rem;
+      
+    }
+    
+            .leftBut,
+            .rightBut {
+              margin-top:300px;
+              color: @Green-Darker;
+              font-size: 3rem;
+              font-weight:bold;
+              cursor: pointer;
+              padding: 5px;
+              
+              
+            }
+              
+            .carousel-img {
+              border-radius: 2rem;
+              border: 4px solid black;
+              display:none;
+              
+            }
+            
+              
+            .card {
+              display:none;
+            }
+            
     @media@tab{
-        display: flex;
-        flex-flow: column;
-        justify-content: center;
-        padding: 0 10rem;
-        
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding: 0 10rem;
+      
         
       }
       @media@website{
         display: flex;
         flex-flow: row;
-        justify-content: space-evenly;
-        padding: 3rem;
+        // justify-content: space-evenly;
+        padding: 2rem 0; 
+        
         
       }
       
       .logo{
         border-radius: 2rem;
     border: 4px solid black;
-    margin: 2rem 0;
+    margin: 2rem;
    }
 }
 
@@ -108,6 +111,7 @@ nav a {
     display: flex;
     flex-flow: column;
     padding: 3rem;
+    
 }
     .article {
   margin: 2rem;
@@ -181,14 +185,48 @@ nav a {
   flex-flow: column;
   align-items: center;
   font-size: 2rem;
-  padding: 4rem 0;
+  background-color: @Green-Dark;
+  margin: 3rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+
+  
+  .address{
+    text-decoration-line: none;
+    color: @Green-Darker;
+  }
   h3{
+    color: @Green-Darker;
     font-size: 4rem;
+    margin: 2rem;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2rem;
+    border-radius: 1rem;
+    
+  }
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+
   }
 }
 footer{
     display: flex;
     justify-content: center;
     font-size: 4rem;
+    color: @Green-Darker;
 }
 
