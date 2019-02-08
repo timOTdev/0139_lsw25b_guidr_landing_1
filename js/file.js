@@ -29,10 +29,6 @@ class Carousel {
     this.imgList[this.index].style.display = "block";
     this.leftBtn.addEventListener("click", () => this.GoLeft());
     this.rightBtn.addEventListener("click", () => this.GoRight());
-    
-   
-    
-   
 
     this.cardList = Array.from(this.imgList).map(img => new Card(img));
   }
@@ -77,6 +73,7 @@ carouselList = document.querySelectorAll(".carousel");
 carouselList.forEach(carousel => new Carousel(carousel));
 
 let fadein_tween = TweenLite.from(".container", 1, { autoAlpha: 0, y: 500 });
-let fadein_tween1 = TweenLite.from(".about-container", 1, { autoAlpha: 0, y: 500 });
-
-
+let fadein_tween1 = TweenLite.from(".about-container", 1, {
+  autoAlpha: 0,
+  y: 500
+});
