@@ -212,6 +212,11 @@ nav a:active {
   display: none;
   width: 300px;
 }
+@media (max-width: px) {
+  .img-container .carousel-img {
+    display: none;
+  }
+}
 @media (min-width: 840px) {
   .img-container .carousel-img {
     width: 400px;
