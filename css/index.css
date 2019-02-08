@@ -189,12 +189,22 @@ nav a:active {
 }
 .img-container .leftBut,
 .img-container .rightBut {
-  margin-top: 300px;
-  color: #1A4731;
-  font-size: 3rem;
+  margin-top: 350px;
+  color: silver;
+  font-size: 5rem;
   font-weight: bold;
   cursor: pointer;
-  padding: 5px;
+  display: flex;
+  border-radius: 1rem;
+}
+.img-container .leftBut:hover,
+.img-container .rightBut:hover {
+  background-color: #1F9D55;
+}
+.img-container .leftBut:active,
+.img-container .rightBut:active {
+  background-color: #1F9D55;
+  transform: translateY(4px);
 }
 .img-container .carousel-img {
   border-radius: 2rem;
@@ -353,10 +363,11 @@ nav a:active {
   background-color: #1F9D55;
   border-radius: 1rem;
   border: 1px solid black;
+  margin: 0 2rem;
 }
 @media (min-width: 500px) {
   #contact {
-    margin: 0 10rem;
+    margin: 5rem;
   }
 }
 #contact .address {
