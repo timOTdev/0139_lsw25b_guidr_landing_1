@@ -1,4 +1,4 @@
-# guidr-landing1
+# 0139_lsw25b_guidr_landing_1
 
 Landing Page Website for Guidr App
 
@@ -8,4 +8,3 @@ Guides will be able to use Guidr to build their Outdoor Resume. Users can login,
 
 Home Page:
 Home Page can navigate to the sign in page. Links to social media and email. Links to about use page. Has an about use section and mission statement.
-
